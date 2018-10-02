@@ -1,0 +1,4 @@
+table {border-top: 3px solid #ff0000; border-left: 3px solid #ff0000; border-bottom: 3px solid #ff0000; border-right: 3px solid #ff0000; font-size: 110%;}
+table td {border-right: 1px solid #00ff00; border-bottom: 1px solid #00ff00; border-left: 1px solid #00ff00; border-top: 1px solid #00ff00; text-align: center;}
+input {width: 100%; box-sizing: border-box;-webkit-box-sizing:border-box;-moz-box-sizing: border-box; color: blue; text-align: center;}
+grande {font-size: 120%}

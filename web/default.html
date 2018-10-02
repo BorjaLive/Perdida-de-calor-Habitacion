@@ -1,0 +1,151 @@
+<html>
+	<head>
+		<title>Perdida por conducción</title>
+		<meta name="tipo_contenido"  content="text/html;" http-equiv="content-type" charset="utf-8">
+		<link rel="stylesheet" href="estilo.css">
+	</head>
+	<body>
+		<form name="variables" method="post" action="calculo.php">
+			
+			<table cellpadding="0" cellspacing="0">
+				<tr align="center" valign="middle"> 
+					<th colspan="6"><grande>PAREDES</grande></th>
+				</tr>
+			   <tr>
+			      <td><p>Objeto</p></td>
+			      <td><p>Ancho (m)</p></td>
+			      <td><p>Alto (m)</p></td>
+			      <td><p>Grosor (m)</p></td>
+			      <td><p>Constante (J/m2h)</p></td>
+			      <td><p>Temperatura exterior (º)</p></td>
+			   </tr>
+			   <tr>
+			      <td>Pared 1</td>
+			      <td><input type="text" name="P1_ancho" size="5"/></td>
+			      <td><input type="text" name="P1_alto" size="5" /></td>
+			      <td><input type="text" name="P1_grosor" size="5" /></td>
+			      <td><input type="text" name="P1_constante" size="5" /></td>
+			      <td><input type="text" name="P1_temperatura" size="5" /></td>
+			   </tr>
+			   <tr>
+			      <td>Pared 2</td>
+			      <td><input type="text" name="P2_ancho" size="5" /></td>
+			      <td><input type="text" name="P2_alto" size="5" /></td>
+			      <td><input type="text" name="P2_grosor" size="5" /></td>
+			      <td><input type="text" name="P2_constante" size="5" /></td>
+			      <td><input type="text" name="P2_temperatura" size="5" /></td>
+			   </tr>
+			   <tr>
+			      <td>Pared 3</td>
+			      <td><input type="text" name="P3_ancho" size="5" /></td>
+			      <td><input type="text" name="P3_alto" size="5" /></td>
+			      <td><input type="text" name="P3_grosor" size="5" /></td>
+			      <td><input type="text" name="P3_constante" size="5" /></td>
+			      <td><input type="text" name="P3_temperatura" size="5" /></td>
+			   </tr>
+			   <tr>
+			      <td>Pared 4</td>
+			      <td><input type="text" name="P4_ancho" size="5" /></td>
+			      <td><input type="text" name="P4_alto" size="5" /></td>
+			      <td><input type="text" name="P4_grosor" size="5" /></td>
+			      <td><input type="text" name="P4_constante" size="5" /></td>
+			      <td><input type="text" name="P4_temperatura" size="5" /></td>
+			   </tr>
+			   <tr>
+			      <td>Pared 5</td>
+			      <td><input type="text" name="P5_ancho" size="5" /></td>
+			      <td><input type="text" name="P5_alto" size="5" /></td>
+			      <td><input type="text" name="P5_grosor" size="5" /></td>
+			      <td><input type="text" name="P5_constante" size="5" /></td>
+			      <td><input type="text" name="P5_temperatura" size="5" /></td>
+			   </tr>
+			   <tr>
+			      <td>Pared 6</td>
+			      <td><input type="text" name="P6_ancho" size="5" /></td>
+			      <td><input type="text" name="P6_alto" size="5" /></td>
+			      <td><input type="text" name="P6_grosor" size="5" /></td>
+			      <td><input type="text" name="P6_constante" size="5" /></td>
+			      <td><input type="text" name="P6_temperatura" size="5" /></td>
+			   </tr>
+			</table>
+			<br>
+			<table cellpadding="0" cellspacing="0">
+				<tr align="center" valign="middle"> 
+					<th colspan="6"><grande>DISCONTINUIDADES</grande></th>
+				</tr>
+			   	<tr>
+			      <td><p>Objeto</p></td>
+			      <td><p>Ancho (m)</p></td>
+			      <td><p>Alto (m)</p></td>
+			      <td><p>Grosor (m)</p></td>
+			      <td><p>Constante (J/m2h)</p></td>
+			      <td><p>Cantidad (nº veces que se repite)</p></td>
+			      <td><p>Posición (nº de pared)</p></td>
+			   	</tr>
+			   	<tr>
+			      <td>Discontinuidad 1</td>
+			      <td><input type="text" name="D1_ancho" size="5" /></td>
+			      <td><input type="text" name="D1_alto" size="5" /></td>
+			      <td><input type="text" name="D1_grosor" size="5" /></td>
+			      <td><input type="text" name="D1_constante" size="5" /></td>
+			      <td><input type="text" name="D1_cantidad" size="5" /></td>
+			      <td><input type="text" name="D1_posicion" size="5" /></td>
+			   	</tr>
+			   	<tr>
+			      <td>Discontinuidad 2</td>
+			      <td><input type="text" name="D2_ancho" size="5" /></td>
+			      <td><input type="text" name="D2_alto" size="5" /></td>
+			      <td><input type="text" name="D2_grosor" size="5" /></td>
+			      <td><input type="text" name="D2_constante" size="5" /></td>
+			      <td><input type="text" name="D2_cantidad" size="5" /></td>
+			      <td><input type="text" name="D2_posicion" size="5" /></td>
+			   	</tr>
+			   	<tr>
+			      <td>Discontinuidad 3</td>
+			      <td><input type="text" name="D3_ancho" size="5" /></td>
+			      <td><input type="text" name="D3_alto" size="5" /></td>
+			      <td><input type="text" name="D3_grosor" size="5" /></td>
+			      <td><input type="text" name="D3_constante" size="5" /></td>
+			      <td><input type="text" name="D3_cantidad" size="5" /></td>
+			      <td><input type="text" name="D3_posicion" size="5" /></td>
+			   	</tr>
+			  	 <tr>
+			      <td>Discontinuidad 4</td>
+			      <td><input type="text" name="D4_ancho" size="5" /></td>
+			      <td><input type="text" name="D4_alto" size="5" /></td>
+			      <td><input type="text" name="D4_grosor" size="5" /></td>
+			      <td><input type="text" name="D4_constante" size="5" /></td>
+			      <td><input type="text" name="D4_cantidad" size="5" /></td>
+			      <td><input type="text" name="D4_posicion" size="5" /></td>
+			   </tr>
+			   <tr>
+			      <td>Discontinuidad 5</td>
+			      <td><input type="text" name="D5_ancho" size="5" /></td>
+			      <td><input type="text" name="D5_alto" size="5" /></td>
+			      <td><input type="text" name="D5_grosor" size="5" /></td>
+			      <td><input type="text" name="D5_constante" size="5" /></td>
+			      <td><input type="text" name="D5_cantidad" size="5" /></td>
+			      <td><input type="text" name="D5_posicion" size="5" /></td>
+			   </tr>
+			   	<tr>
+			      <td>Discontinuidad 6</td>
+			      <td><input type="text" name="D6_ancho" size="5" /></td>
+			      <td><input type="text" name="D6_alto" size="5" /></td>
+			      <td><input type="text" name="D6_grosor" size="5" /></td>
+			      <td><input type="text" name="D6_constante" size="5" /></td>
+			      <td><input type="text" name="D6_cantidad" size="5" /></td>
+			      <td><input type="text" name="D6_posicion" size="5" /></td>
+			   	</tr>
+			</table>
+			<br>
+			<div size="2">
+				<grande>Temperatura interna</grande>
+				<input type="text" name="temperaturaInterna"/>
+				<input type="submit" value="Calcular" />
+			</div>
+		</form>
+		
+		<img src="draw.png">
+		
+	</body>
+</html>
